@@ -62,7 +62,7 @@ header {
 .download {
   cursor: pointer;
   background-color: white;
-  padding: 5px 10px;
+  padding: 10px 10px;
   border-radius: 5px;
   color: #2c3e50;
   display: flex;
@@ -72,10 +72,14 @@ header {
   border: none;
   position: fixed;
   right: 25px;
-  top: 25px;
+  bottom: 35px;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
   align-items: center;
   font-size: large;
+}
+
+.download p {
+  margin: 0px;
 }
 
 h1 {
@@ -190,5 +194,9 @@ label {
 
   .photo {
     margin: auto;
+  }
+
+  .download p {
+    display: none;
   }
 }
