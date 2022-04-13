@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && git add dist -f && git commit --amend --no-edit && git subtree push --prefix dist origin gh-pages  "
+    "deploy": "vite build && git add dist -f && git commit --amend --no-edit && git push origin `git subtree split --prefix dist master`:gh-pages --force"
   },
   "devDependencies": {
     "vite": "^2.9.0"
