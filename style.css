@@ -108,15 +108,18 @@ label {
 .left {
   background-color: #2c3e50;
   color: white;
-  flex-grow: 1;
+  flex-grow: 1.1;
   flex-basis: 0;
   padding: 15px 25px;
 }
 
-.degree:not(:last-of-type) {
-  border-bottom: solid #8c8e91 2px;
+.degree {
   padding-bottom: 5px;
   margin-bottom: 20px;
+}
+
+.degree:not(:last-of-type) {
+  border-bottom: solid #8c8e91 2px;
 }
 
 .degree .year {
@@ -128,6 +131,18 @@ label {
   font-size: 0.9rem;
 }
 
+.language {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.language div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .right {
   flex-grow: 2;
   flex-basis: 0;
@@ -136,8 +151,8 @@ label {
 
 .job:not(:last-of-type) {
   border-bottom: solid #2c3e50 2px;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .job .year {
