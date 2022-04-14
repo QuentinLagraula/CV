@@ -182,6 +182,16 @@ label {
   color: #8c8e91;
 }
 
+.language_switch img {
+  cursor: pointer;
+  position: fixed;
+  right: 25px;
+  top: 25px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+}
+
 @media only screen and (max-width: 600px) {
   .body {
     flex-direction: column;
@@ -198,5 +208,9 @@ label {
 
   .download p {
     display: none;
+  }
+
+  .language_switch img {
+    top: 75px;
   }
 }
